@@ -1,0 +1,25 @@
+{
+  "name": "books-project-e2e-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:2e2:ui": "cypress open",
+    "test:2e2:ui:headless": "cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HappyFeed/books-project-e2e-test.git"
+  },
+  "keywords": [],
+  "author": "Alejandro Martinez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HappyFeed/books-project-e2e-test/issues"
+  },
+  "homepage": "https://github.com/HappyFeed/books-project-e2e-test#readme",
+  "dependencies": {
+    "cypress": "^9.5.2",
+    "faker": "^6.6.6"
+  }
+}
