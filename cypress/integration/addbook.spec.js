@@ -10,7 +10,8 @@ describe('Given I want to register a new book', () => {
     before(() => {
         // Arrange
         cy.visit('http://localhost:4200/dashboard');
-
+        cy.contains('10 / page').click();
+        cy.get('[title="50 / page"]').click();
         cy.contains('Add').click();
         cy.get('#name').click()
         cy.get('#name').type(bookName);
@@ -19,13 +20,10 @@ describe('Given I want to register a new book', () => {
         // Act
         cy.contains('Save').click();
 
-        cy.contains('10 / page').click();
-        cy.get('[title="50 / page"]').click();
     })
 
     it ('The book should be visible in the list of books', () => {
         //Assert
-        
         cy.contains(bookAuthor).should('exist')
 
     })
