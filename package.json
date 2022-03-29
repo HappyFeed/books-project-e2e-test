@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:2e2:ui": "cypress open",
-    "test:2e2:ui:headless": "cypress run"
+    "test": "cypress run"
   },
   "repository": {
     "type": "git",
@@ -19,7 +18,10 @@
   },
   "homepage": "https://github.com/HappyFeed/books-project-e2e-test#readme",
   "dependencies": {
-    "cypress": "^9.5.2",
-    "faker": "^6.6.6"
+    "chai": "^4.3.6",
+    "cypress": "^9.5.2"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^6.0.0"
   }
 }
